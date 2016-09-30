@@ -4,11 +4,14 @@ using namespace std;
 
 void bubbleSort(int Arr[],int n)
 {
+
 	for(int i=0;i<n-1;i++)
 	{
-		
-		if(Arr[i]>Arr[i+1])
-			swap(Arr[i],Arr[i+1]);
+		for(int j=0;j<n-1-i;j++)
+		{
+		if(Arr[j]>Arr[j+1])
+			swap(Arr[j],Arr[j+1]);
+		}
 	
 	}
 }
